@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julia's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="/img/1000017838-Photoroom.png"> 
+</head>
+<body>
+
+    <header class="header">
+        <nav>
+            <a href="#sobre" class="logo">Júlia Pimentel</a>
+            <ul>
+                <li><a href="#sobre" data-key="nav_sobre">Sobre</a></li>
+                <li><a href="#servicos" data-key="nav_servicos">Serviços</a></li>
+                <li><a href="#projetos" data-key="nav_projetos">Projetos</a></li>
+                <li><a href="#habilidades" data-key="nav_habilidade">Habilidades</a></li>
+                <li><a href="#contato" data-key="nav_contato">Contato</a></li>
+            </ul>
+            <button id="lang-toggle-btn">
+                <span class="lang-text" data-key="lang_btn_text">ENG</span>
+                <span class="lang-icon">🌐</span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="sobre" class="about">
+            <div class="about-text">
+                <h1 class="titulo-gradiente" data-key="hero_titulo">ESTAGIÁRIA DE DATA ANALYSIS AND DELIVERY</h1>
+                <p data-key="hero_subtitulo">Eu sou Julia, uma futura analista de dados, apaixonada por análises, movida por curiosidade e vontade contínua de crescer.</p>
+                <a href="#projetos" class="btn" data-key="hero_btn">VEJA MEUS TRABALHOS</a>
+            </div>
+            <div class="about-image">
+                <img src="/img/codelikeagirl-Photoroom.png" alt="Foto de Júlia Pimentel"> 
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="servicos" class="services">
+            <h2 class="titulo-gradiente" data-key="services_titulo">MINHA TRAJETÓRIA</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon-wrapper"><i class="fa-solid fa-briefcase timeline-icon"></i></div>
+                        <h3 data-key="timeline_item_1_titulo">Jovem Aprendiz | Drogarias Pacheco</h3>
+                        <p data-key="timeline_item_1_data">Outubro de 2023 - Abril de 2024</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon-wrapper"><i class="fa-solid fa-graduation-cap timeline-icon"></i></div>
+                        <h3 data-key="timeline_item_2_titulo">Formação Ensino Médio</h3>
+                        <p data-key="timeline_item_2_data">Dezembro de 2023</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon-wrapper"><i class="fa-solid fa-laptop-code timeline-icon"></i></div>
+                        <h3 data-key="timeline_item_3_titulo">Início da Graduação | Análise e Desenvolvimento de Sistemas</h3>
+                        <p data-key="timeline_item_3_data">Fevereiro de 2024 - Centro Universitário Newton Paiva</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon-wrapper"><i class="fa-solid fa-headset timeline-icon"></i></div>
+                        <h3 data-key="timeline_item_4_titulo">Estagiária de Suporte Técnico JR | Ortep</h3>
+                        <p data-key="timeline_item_4_data">Abril de 2024 - Julho de 2024</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon-wrapper"><i class="fa-solid fa-server timeline-icon"></i></div>
+                        <h3 data-key="timeline_item_5_titulo">Estagiária Full-Stack | Crédito Essencial</h3>
+                        <p data-key="timeline_item_5_data">Agosto de 2024 - Novembro de 2024</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon-wrapper"><i class="fa-solid fa-chart-column timeline-icon"></i></div>
+                        <h3 data-key="timeline_item_6_titulo">Estagiária de Data Analysis and Delivery | RHI Magnesita</h3>
+                        <p data-key="timeline_item_6_data">Maio de 2025 - Atualmente</p>
+                    </div>
+                </div>
+                   <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-icon-wrapper"><i class="fa-solid fa-calendar-check timeline-icon"></i></div>
+                        <h3 data-key="timeline_item_7_titulo">Previsão de Formatura</h3>
+                        <p data-key="timeline_item_7_data">Julho de 2026</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+        
+        <section id="projetos" class="portfolio">
+            <h2 class="titulo-gradiente" data-key="projects_titulo">PROJETOS</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="/img/relational.png" alt="Projeto Banco de Dados">
+                    <div class="project-info">
+                        <h3 data-key="project_1_title">Estruturação de Banco de Dados</h3>
+                        <p data-key="project_1_desc">Projetei e implementei a arquitetura do banco de dados relacional da empresa, com modelagem de dados, criação de tabelas e otimização de consultas SQL para a gestão de informações críticas.</p>
+                        <div class="project-tech-list">
+                            <span>SQL Server</span>
+                            <span>Modelagem de Dados</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="/img/software.png" alt="Projeto Sistema de Clínica">
+                    <div class="project-info">
+                        <h3 data-key="project_2_title">Sistema de Gestão para Clínica Médica</h3>
+                        <p data-key="project_2_desc">Projeto acadêmico em Java com interface gráfica (GUI) para gerenciar pacientes, agendamentos com JCalendar e prontuários, abrangendo front-end e back-end.</p>
+                        <div class="project-tech-list">
+                            <span>Java</span>
+                            <span>Java Swing</span>
+                            <span>JCalendar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="/img/monitor.png" alt="Projeto Extração de Dados">
+                    <div class="project-info">
+                        <h3 data-key="project_3_title">Extração e Tratamento de Dados Globais</h3>
+                        <p data-key="project_3_desc">Atuo na extração e tratamento de dados do sistema SAP, fornecendo informações essenciais para equipes internacionais e para a tomada de decisões estratégicas da empresa.</p>
+                        <div class="project-tech-list">
+                            <span>SAP</span>
+                            <span>ETL</span>
+                            <span>Análise de Dados</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="habilidades" class="skills">
+            <h2 class="titulo-gradiente" data-key="skills_titulo">HABILIDADES</h2>
+            <div class="skills-bloco">
+                <h3 class="titulo-gradiente" data-key="skills_hard_titulo">Hard Skills</h3>
+                <div class="skills-icones">
+                    <img src="img/html5-original-wordmark.svg" alt="Ícone do HTML5">
+                    <img src="img/css3-original-wordmark.svg" alt="Ícone do CSS3">
+                    <img src="img/javascript-original.svg" alt="Ícone do JavaScript">
+                    <img src="img/java-original-wordmark.svg" alt="Ícone do Java">
+                    <img src="img/python-original-wordmark.svg" alt="Ícone do Python">
+                    <img src="img/microsoftsqlserver-original-wordmark.svg" alt="Ícone do SQL Server">
+                    <img src="img/mongodb-original-wordmark.svg" alt="Ícone do MongoDB">
+                    <img src="img/sap.png" alt="Ícone do SAP">
+                    <img src="img/json-original.svg" alt="Ícone do Json">
+                </div>
+            </div>
+            <div class="skills-bloco">
+                <h3 class="titulo-gradiente" data-key="skills_soft_titulo">Soft Skills</h3>
+                <ul class="soft-skills-grid">
+                    <li class="soft-skill-item" data-key="soft_skill_1">Proatividade</li>
+                    <li class="soft-skill-item" data-key="soft_skill_2">Resiliência / Adaptabilidade</li>
+                    <li class="soft-skill-item" data-key="soft_skill_3">Comunicação</li>
+                    <li class="soft-skill-item" data-key="soft_skill_4">Colaboração / Trabalho em equipe</li>
+                    <li class="soft-skill-item" data-key="soft_skill_5">Gestão de tempo</li>
+                    <li class="soft-skill-item" data-key="soft_skill_6">Pensamento crítico</li>
+                    <li class="soft-skill-item" data-key="soft_skill_7">Aprendizado contínuo</li>
+                    <li class="soft-skill-item" data-key="soft_skill_8">Empatia</li>
+                </ul>
+            </div>
+            <div class="skills-bloco">
+                <h3 class="titulo-gradiente" data-key="skills_lang_titulo">Idiomas</h3>
+                <ul class="languages-lista">
+                    <li class="language-item">
+                        <img src="/img/brazil.png" alt="Bandeira do Brasil">
+                        <div class="language-text">
+                            <span data-key="lang_1_name">Português</span>
+                            <span class="lang-level" data-key="lang_1_level">Nativo</span>
+                        </div>
+                    </li>
+                    <li class="language-item">
+                        <img src="/img/us-flag.png" alt="Bandeira do Estados Unidos">
+                        <div class="language-text">
+                            <span data-key="lang_2_name">Inglês</span>
+                            <span class="lang-level" data-key="lang_2_level">Avançado</span>
+                        </div>
+                    </li>
+                    <li class="language-item">
+                        <img src="/img/italy-flag.png" alt="Bandeira da Itália">
+                        <div class="language-text">
+                            <span data-key="lang_3_name">Italiano</span>
+                            <span class="lang-level" data-key="lang_3_level">Em progresso</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+
+        <section id="contato" class="contact">
+            <h2 class="titulo-gradiente" data-key="contact_titulo">ENTRE EM CONTATO</h2>
+            <p data-key="contact_subtitulo">Uma boa conversa pode ser o começo de algo incrível. Fique à vontade para me mandar uma mensagem!</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 data-key="contact_info_title">Informações de Contato</h3>
+                    <p><i class="fas fa-envelope"></i> pugedoj@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Belo Horizonte, MG - Brasil</p>
+
+                    <h3 data-key="contact_social_title">Redes Sociais</h3>
+                    <div class="social-links">
+                        <a href="www.linkedin.com/in/juliacarlapimentel" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/PimentelJ05" target="_blank"><i class="fab fa-github"></i></a>
+                        </div>
+                </div>
+
+                <form id="contact-form" action="https://formspree.io/f/xpwjogng" method="POST">
+                    <input type="text" name="name" placeholder="Seu Nome / Your Name" required>
+                    <input type="email" name="email" placeholder="Seu E-mail / Your Email" required>
+                    <textarea name="message" rows="6" placeholder="Sua Mensagem / Your Message" required></textarea>
+                    <button type="submit" class="btn" data-key="contact_form_btn">ENVIAR MENSAGEM</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Júlia Pimentel. <span data-key="footer_rights">Todos os direitos reservados.</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
