@@ -107,7 +107,7 @@ const translations = {
         lang_3_level: "In progress",
         lang_btn_text: "PT-BR",
         contact_titulo: "GET IN TOUCH",
-        contact_subtitulo: "A great conversation can be the start of something amazing. Feel free to drop me a message!",
+        contact_subtitulo: "Have a project in mind or just want to chat? Send me a message!",
         contact_info_title: "Contact Information",
         contact_social_title: "Social Media",
         contact_form_btn: "SEND MESSAGE",
@@ -117,6 +117,10 @@ const translations = {
 
 const langToggleButton = document.getElementById('lang-toggle-btn');
 const translatableElements = document.querySelectorAll('[data-key]');
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const closeBtn = document.getElementById('close-btn');
+const mobileMenu = document.querySelector('header ul');
+const menuLinks = document.querySelectorAll('header ul a');
 
 let currentLang = 'pt';
 
@@ -129,6 +133,20 @@ function translatePage() {
         }
     });
 }
+
+function openMobileMenu() {
+    mobileMenu.classList.add('mobile-menu-open');
+}
+
+function closeMobileMenu() {
+    mobileMenu.classList.remove('mobile-menu-open');
+}
+
+hamburgerBtn.addEventListener('click', openMobileMenu);
+closeBtn.addEventListener('click', closeMobileMenu);
+menuLinks.forEach(link => {
+    link.addEventListener('click', closeMobileMenu);
+});
 
 langToggleButton.addEventListener('click', () => {
     currentLang = currentLang === 'pt' ? 'en' : 'pt';
