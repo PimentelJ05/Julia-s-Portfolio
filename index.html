@@ -15,28 +15,29 @@
 
     <header class="header">
         <nav>
-            <a href="#sobre" class="logo">Júlia Pimentel</a>
+            <a href="#about" class="logo">Júlia Pimentel</a>
             <ul>
-                <li><a href="#sobre" data-key="nav_sobre">Sobre</a></li>
-                <li><a href="#servicos" data-key="nav_servicos">Serviços</a></li>
-                <li><a href="#projetos" data-key="nav_projetos">Projetos</a></li>
-                <li><a href="#habilidades" data-key="nav_habilidade">Habilidades</a></li>
-                <li><a href="#contato" data-key="nav_contato">Contato</a></li>
+                <div class="close-btn-wrapper"><i id="close-btn" class="fas fa-times close-btn"></i></div>
+                <li><a href="#about" data-key="nav_sobre">Sobre</a></li>
+                <li><a href="#services" data-key="nav_servicos">Serviços</a></li>
+                <li><a href="#projects" data-key="nav_projetos">Projetos</a></li>
+                <li><a href="#skills" data-key="nav_habilidade">Habilidades</a></li>
+                <li><a href="#contact" data-key="nav_contato">Contato</a></li>
             </ul>
             <button id="lang-toggle-btn">
                 <span class="lang-text" data-key="lang_btn_text">ENG</span>
                 <span class="lang-icon">🌐</span>
             </button>
+            <i id="hamburger-btn" class="fas fa-bars hamburger-btn"></i>
         </nav>
     </header>
 
     <main>
-
-        <section id="sobre" class="about">
+        <section id="about" class="about">
             <div class="about-text">
                 <h1 class="titulo-gradiente" data-key="hero_titulo">ESTAGIÁRIA DE DATA ANALYSIS AND DELIVERY</h1>
                 <p data-key="hero_subtitulo">Eu sou Julia, uma futura analista de dados, apaixonada por análises, movida por curiosidade e vontade contínua de crescer.</p>
-                <a href="#projetos" class="btn" data-key="hero_btn">VEJA MEUS TRABALHOS</a>
+                <a href="#projects" class="btn" data-key="hero_btn">VEJA MEUS TRABALHOS</a>
             </div>
             <div class="about-image">
                 <img src="/img/codelikeagirl-Photoroom.png" alt="Foto de Júlia Pimentel"> 
@@ -45,7 +46,7 @@
 
         <div class="section-divider"></div>
 
-        <section id="servicos" class="services">
+        <section id="services" class="services">
             <h2 class="titulo-gradiente" data-key="services_titulo">MINHA TRAJETÓRIA</h2>
             <div class="timeline">
                 <div class="timeline-item">
@@ -109,7 +110,7 @@
 
         <div class="section-divider"></div>
         
-        <section id="projetos" class="portfolio">
+        <section id="projects" class="portfolio">
             <h2 class="titulo-gradiente" data-key="projects_titulo">PROJETOS</h2>
             <div class="projects-grid">
                 <div class="project-card">
@@ -152,7 +153,7 @@
 
         <div class="section-divider"></div>
 
-        <section id="habilidades" class="skills">
+        <section id="skills" class="skills">
             <h2 class="titulo-gradiente" data-key="skills_titulo">HABILIDADES</h2>
             <div class="skills-bloco">
                 <h3 class="titulo-gradiente" data-key="skills_hard_titulo">Hard Skills</h3>
@@ -211,7 +212,7 @@
 
         <div class="section-divider"></div>
 
-        <section id="contato" class="contact">
+        <section id="contact" class="contact">
             <h2 class="titulo-gradiente" data-key="contact_titulo">ENTRE EM CONTATO</h2>
             <p data-key="contact_subtitulo">Uma boa conversa pode ser o começo de algo incrível. Fique à vontade para me mandar uma mensagem!</p>
             
@@ -225,7 +226,7 @@
                     <div class="social-links">
                         <a href="https://www.linkedin.com/in/juliacarlapimentel/" target="_blank"><i class="fab fa-linkedin"></i></a>
                         <a href="https://github.com/PimentelJ05" target="_blank"><i class="fab fa-github"></i></a>
-                        </div>
+                    </div>
                 </div>
 
                 <form id="contact-form" action="https://formspree.io/f/xpwjogng" method="POST">
@@ -246,5 +247,4 @@
     <script src="script.js"></script>
 
 </body>
-
 </html>
