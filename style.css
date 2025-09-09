@@ -72,15 +72,17 @@ ul {
 .header ul {
     display: flex;
     gap: 30px;
+    /* Adicionado para desktop: visível e alinhado */
+    align-items: center; 
 }
 
-.header ul a {
+.header ul li a {
     font-weight: 500;
     transition: color 0.3s;
     color: var(--cor-texto-principal);
 }
 
-.header ul a:hover {
+.header ul li a:hover {
     color: var(--cor-gradiente-inicio);
 }
 
@@ -107,6 +109,21 @@ ul {
 .lang-icon {
     font-size: 1.2rem;
 }
+
+/* Esconde o hamburger e o botão de fechar por padrão em telas grandes */
+.hamburger-btn, .close-btn {
+    display: none; 
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--cor-texto-principal);
+    z-index: 102; /* Garante que fiquem acima de outros elementos */
+}
+
+/* O wrapper para o botão de fechar deve estar escondido também no desktop */
+.close-btn-wrapper {
+    display: none; 
+}
+
 
 .about {
     min-height: 100vh;
@@ -244,7 +261,7 @@ ul {
 }
 
 .timeline-content {
-    padding: 20px 30px;
+    padding: 20px 70px 20px 30px;
     background-color: rgba(221, 230, 248, 0.05);
     position: relative;
     border-radius: 8px;
@@ -551,15 +568,19 @@ ul {
     font-size: 0.9rem;
 }
 
-@media (max-width: 992px) {
-    .about-text h1 {
-        font-size: 3rem;
+@media (min-width: 769px) {
+    .header ul {
+        display: flex !important; 
+        position: static; 
+        height: auto;
+        width: auto;
+        background-color: transparent;
+        flex-direction: row; 
+        justify-content: flex-end; 
     }
-    .services h2, .portfolio h2, .skills h2, .contact h2 {
-        font-size: 2.7rem;
-    }
-    .about {
-        padding: 120px 8% 50px 8%;
+    .header .close-btn-wrapper,
+    .hamburger-btn {
+        display: none !important; 
     }
 }
 
@@ -570,9 +591,53 @@ ul {
         border-radius: 0;
         padding: 15px 20px;
     }
-    .header nav ul {
-        display: none;
+
+    .header ul {
+        display: flex; 
+        position: fixed;
+        top: 0;
+        left: -100%; 
+        width: 100%;
+        height: 100vh;
+        background-color: var(--cor-fundo);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: left 0.5s ease;
+        z-index: 101;
+        opacity: 0; 
+        pointer-events: none; 
     }
+
+    .header ul.mobile-menu-open {
+        left: 0; 
+        opacity: 1; 
+        pointer-events: auto; 
+    }
+
+    .header ul li {
+        margin: 15px 0; 
+    }
+
+    .header ul li a {
+        font-size: 2rem; 
+    }
+
+    .hamburger-btn {
+        display: block; 
+    }
+
+    .close-btn-wrapper {
+        display: block; 
+        position: absolute; 
+        top: 25px;
+        right: 25px;
+    }
+
+    #lang-toggle-btn {
+        display: none; 
+    }
+
     .about {
         flex-direction: column;
         text-align: center;
@@ -619,6 +684,9 @@ ul {
         text-align: left;
         margin-bottom: 10px;
         font-size: 1.8rem;
+    }
+    .timeline-content {
+        padding: 20px;
     }
     .timeline-content::before {
         left: -10px;
